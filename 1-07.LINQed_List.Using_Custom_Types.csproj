@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>_1_07.LINQed_List.Using_Custom_Types</RootNamespace>
+  </PropertyGroup>
+
+</Project>
