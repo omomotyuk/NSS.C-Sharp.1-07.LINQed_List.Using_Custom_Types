@@ -25,12 +25,23 @@ namespace _1_07.LINQed_List.Using_Custom_Types
             foreach( Customer customer in customers )
             {
                 string name = customer.Bank;
-                if( banks.Count == 0 )
+
+                if( banks.Find(item => item.Name == name) == null )
+                {
+                    banks.Add(new Bank(name));
+                }
+
+                /*if( banks.Count == 0 )
                 {
                     banks.Add(new Bank(name));
                 }
                 else
                 {
+                    //Bank temp = banks.Find(item => item.Name == name);
+                    if(temp.Name == "" )
+                    {
+                        banks.Add(new Bank(name));
+                    //}
                     try
                     {
                         Bank temp = banks.Find(item => item.Name == name);
@@ -40,7 +51,7 @@ namespace _1_07.LINQed_List.Using_Custom_Types
                     {
                         banks.Add(new Bank(name));
                     }
-                }
+                }*/
             }
 
             foreach( Bank bank in banks )
